@@ -1,8 +1,8 @@
-import setup
+import os
 
 if __name__ == '__main__':
 	try:
-		setup.clear_terminal()
-		setup.get_input_file()
-	except (KeyboardInterrupt, Exception) as e:
-		exit(f"[Error] {str(e).capitalize()}!")
+		os.system("clear")
+		__import__("main").mainx()
+	except (KeyboardInterrupt,  Exception) as Error:
+		exit("\nErorr Running: {}".format(Error))
